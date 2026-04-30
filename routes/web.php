@@ -39,6 +39,14 @@ use App\Http\Livewire\Users;
 
 Route::redirect('/', '/login');
 
+Route::get('/locale/{lang}', function ($lang) {
+    $available = config('app.available_locales', ['ar', 'en']);
+    if (in_array($lang, $available)) {
+        session(['locale' => $lang]);
+    }
+    return redirect()->back();
+})->name('locale.switch');
+
 Route::get('/register', Register::class)->name('register');
 
 Route::get('/login', Login::class)->name('login');

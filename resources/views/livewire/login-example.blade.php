@@ -11,7 +11,7 @@
                             d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
                             clip-rule="evenodd"></path>
                     </svg>
-                    Back to homepage
+                    {{ __('ui.back_to_homepage') }}
                 </a>
             </p>
             <div class="row justify-content-center form-bg-image"
@@ -19,12 +19,12 @@
                 <div class="col-12 d-flex align-items-center justify-content-center">
                     <div class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
                         <div class="text-center text-md-center mb-4 mt-md-0">
-                            <h1 class="mb-0 h3">Welcome back</h1>
+                            <h1 class="mb-0 h3">{{ __('ui.welcome_back') }}</h1>
                         </div>
                         <form action="#" class="mt-4">
                             <!-- Form -->
                             <div class="form-group mb-4">
-                                <label for="email">Your Email</label>
+                                <label for="email">{{ __('ui.your_email') }}</label>
                                 <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1">
                                         <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20"
@@ -43,7 +43,7 @@
                             <div class="form-group">
                                 <!-- Form -->
                                 <div class="form-group mb-4">
-                                    <label for="password">Your Password</label>
+                                    <label for="password">{{ __('ui.your_password') }}</label>
                                     <div class="input-group">
                                         <span class="input-group-text" id="basic-addon2">
                                             <svg class="icon icon-xs text-gray-600" fill="currentColor"
@@ -62,19 +62,19 @@
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="remember">
                                         <label class="form-check-label mb-0" for="remember">
-                                            Remember me
+                                            {{ __('ui.remember_me') }}
                                         </label>
                                     </div>
-                                    <div><a href="./forgot-password.html" class="small text-right">Lost password?</a>
+                                    <div><a href="./forgot-password.html" class="small text-right">{{ __('ui.lost_password') }}</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-gray-800">Sign in</button>
+                                <button type="submit" class="btn btn-gray-800">{{ __('ui.sign_in_btn') }}</button>
                             </div>
                         </form>
                         <div class="mt-3 mb-4 text-center">
-                            <span class="fw-normal">or login with</span>
+                            <span class="fw-normal">{{ __('ui.or_login_with') }}</span>
                         </div>
                         <div class="d-flex justify-content-center my-4">
                             <a href="#" class="btn btn-icon-only btn-pill btn-outline-gray-500 me-2"
@@ -110,8 +110,8 @@
                         </div>
                         <div class="d-flex justify-content-center align-items-center mt-4">
                             <span class="fw-normal">
-                                Not registered?
-                                <a href="./sign-up.html" class="fw-bold">Create account</a>
+                                {{ __('ui.not_registered') }}
+                                <a href="./sign-up.html" class="fw-bold">{{ __('ui.create_account_link') }}</a>
                             </span>
                         </div>
                     </div>

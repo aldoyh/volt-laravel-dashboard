@@ -7,14 +7,14 @@
             alt="Bonnie Green">
         </div>
         <div class="d-block">
-          <h2 class="h5 mb-3">Hi, Jane</h2>
+          <h2 class="h5 mb-3">{{ __('ui.hi') }}, Jane</h2>
           <a href="/login" class="btn btn-secondary btn-sm d-inline-flex align-items-center">
             <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
             </svg>
-            Sign Out
+            {{ __('ui.sign_out') }}
           </a>
         </div>
       </div>
@@ -36,7 +36,7 @@
             <img src="/assets/img/brand/light.svg" height="20" width="20" alt="Volt Logo">
           </span>
           <span class="mt-1 ms-1 sidebar-text">
-            Volt Laravel
+            {{ __('ui.brand') }}
           </span>
         </a>
       </li>
@@ -47,7 +47,7 @@
               <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
               <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
             </svg></span></span>
-          <span class="sidebar-text">Dashboard</span>
+          <span class="sidebar-text">{{ __('ui.dashboard') }}</span>
         </a>
       </li>
       <li class="nav-item">
@@ -55,7 +55,7 @@
           data-bs-target="#submenu-laravel" aria-expanded="true">
           <span>
             <span class="sidebar-icon"><i class="fab fa-laravel me-2" style="color: #fb503b;"></i></span>
-            <span class="sidebar-text" style="color: #fb503b;">Laravel Examples</span>
+            <span class="sidebar-text" style="color: #fb503b;">{{ __('ui.laravel_examples') }}</span>
           </span>
           <span class="link-arrow"><svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg">
@@ -68,12 +68,12 @@
           <ul class="flex-column nav">
             <li class="nav-item {{ Request::segment(1) == 'profile' ? 'active' : '' }}">
               <a href="/profile" class="nav-link">
-                <span class="sidebar-text">Profile</span>
+                <span class="sidebar-text">{{ __('ui.profile') }}</span>
               </a>
             </li>
             <li class="nav-item {{ Request::segment(1) == 'users' ? 'active' : '' }}">
               <a href="/users" class="nav-link">
-                <span class="sidebar-text">User management</span>
+                <span class="sidebar-text">{{ __('ui.user_management') }}</span>
               </a>
             </li>
           </ul>
@@ -88,10 +88,10 @@
                   d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
                 </path>
               </svg></span>
-            <span class="sidebar-text">Kanban </span>
+            <span class="sidebar-text">{{ __('ui.kanban') }} </span>
           </span>
           <span>
-            <span class="badge badge-sm bg-secondary ms-1">Pro</span>
+            <span class="badge badge-sm bg-secondary ms-1">{{ __('ui.pro_badge') }}</span>
           </span>
         </a>
       </li>
@@ -104,7 +104,7 @@
                 d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
                 clip-rule="evenodd"></path>
             </svg></span>
-          <span class="sidebar-text">Transactions</span>
+          <span class="sidebar-text">{{ __('ui.transactions') }}</span>
         </a>
       </li>
       <li class="nav-item">
@@ -117,10 +117,10 @@
                   clip-rule="evenodd"></path>
               </svg>
             </span>
-            <span class="sidebar-text">Calendar</span>
+            <span class="sidebar-text">{{ __('ui.calendar') }}</span>
           </span>
           <span>
-            <span class="badge badge-sm bg-secondary ms-1">Pro</span>
+            <span class="badge badge-sm bg-secondary ms-1">{{ __('ui.pro_badge') }}</span>
           </span>
         </a>
         </li>
@@ -134,10 +134,10 @@
                   clip-rule="evenodd"></path>
               </svg>
             </span>
-            <span class="sidebar-text">Map</span>
+            <span class="sidebar-text">{{ __('ui.map') }}</span>
           </span>
           <span>
-            <span class="badge badge-sm bg-secondary ms-1">Pro</span>
+            <span class="badge badge-sm bg-secondary ms-1">{{ __('ui.pro_badge') }}</span>
           </span>
         </a>
         </li>
@@ -152,7 +152,7 @@
                   d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"
                   clip-rule="evenodd"></path>
               </svg></span>
-            <span class="sidebar-text">Tables</span>
+            <span class="sidebar-text">{{ __('ui.tables') }}</span>
           </span>
           <span class="link-arrow"><svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg">
@@ -166,7 +166,7 @@
           <ul class="flex-column nav">
             <li class="nav-item {{ Request::segment(1) == 'bootstrap-tables' ? 'active' : '' }}">
               <a class="nav-link" href="/bootstrap-tables">
-                <span class="sidebar-text">Bootstrap Tables</span>
+                <span class="sidebar-text">{{ __('ui.bootstrap_tables') }}</span>
               </a>
             </li>
           </ul>
@@ -183,7 +183,7 @@
                   clip-rule="evenodd"></path>
                 <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path>
               </svg></span>
-            <span class="sidebar-text">Page examples</span>
+            <span class="sidebar-text">{{ __('ui.page_examples') }}</span>
           </span>
           <span class="link-arrow"><svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg">
@@ -196,42 +196,42 @@
           <ul class="flex-column nav">
             <li class="nav-item">
               <a class="nav-link" href="{{ route('profile-example') }}">
-                <span class="sidebar-text">Profile</span>
+                <span class="sidebar-text">{{ __('ui.profile') }}</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ route('login-example') }}">
-                <span class="sidebar-text">Sign In</span>
+                <span class="sidebar-text">{{ __('ui.sign_in') }}</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ route('register-example') }}">
-                <span class="sidebar-text">Sign Up</span>
+                <span class="sidebar-text">{{ __('ui.sign_up') }}</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ route('forgot-password-example') }}">
-                <span class="sidebar-text">Forgot password</span>
+                <span class="sidebar-text">{{ __('ui.forgot_password') }}</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/reset-password-example">
-                <span class="sidebar-text">Reset password</span>
+                <span class="sidebar-text">{{ __('ui.reset_password') }}</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/lock">
-                <span class="sidebar-text">Lock</span>
+                <span class="sidebar-text">{{ __('ui.lock') }}</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/404">
-                <span class="sidebar-text">404 Not Found</span>
+                <span class="sidebar-text">{{ __('ui.404_not_found') }}</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/500">
-                <span class="sidebar-text">500 Not Found</span>
+                <span class="sidebar-text">{{ __('ui.500_error') }}</span>
               </a>
             </li>
           </ul>
@@ -248,7 +248,7 @@
                   d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"
                   clip-rule="evenodd"></path>
               </svg></span>
-            <span class="sidebar-text">Components</span>
+            <span class="sidebar-text">{{ __('ui.components') }}</span>
           </span>
           <span class="link-arrow"><svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg">
@@ -263,27 +263,27 @@
           <ul class="flex-column nav">
             <li class="nav-item {{ Request::segment(1) == 'buttons' ? 'active' : '' }}">
               <a class="nav-link" href="/buttons">
-                <span class="sidebar-text">Buttons</span>
+                <span class="sidebar-text">{{ __('ui.buttons') }}</span>
               </a>
             </li>
             <li class="nav-item {{ Request::segment(1) == 'notifications' ? 'active' : '' }}">
               <a class="nav-link" href="/notifications">
-                <span class="sidebar-text">Notifications</span>
+                <span class="sidebar-text">{{ __('ui.notifications') }}</span>
               </a>
             </li>
             <li class="nav-item {{ Request::segment(1) == 'forms' ? 'active' : '' }}">
               <a class="nav-link" href="/forms">
-                <span class="sidebar-text">Forms</span>
+                <span class="sidebar-text">{{ __('ui.forms') }}</span>
               </a>
             </li>
             <li class="nav-item {{ Request::segment(1) == 'modals' ? 'active' : '' }}">
               <a class="nav-link" href="/modals">
-                <span class="sidebar-text">Modals</span>
+                <span class="sidebar-text">{{ __('ui.modals') }}</span>
               </a>
             </li>
             <li class="nav-item {{ Request::segment(1) == 'typography' ? 'active' : '' }}">
               <a class="nav-link" href="/typography">
-                <span class="sidebar-text">Typography</span>
+                <span class="sidebar-text">{{ __('ui.typography') }}</span>
               </a>
             </li>
           </ul>
@@ -299,8 +299,8 @@
                 d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
                 clip-rule="evenodd"></path>
             </svg></span>
-          <span class="sidebar-text">Documentation </span> <span><span
-              class="badge badge-sm bg-secondary ms-1">v1.0</span></span>
+          <span class="sidebar-text">{{ __('ui.documentation') }} </span> <span><span
+              class="badge badge-sm bg-secondary ms-1">{{ __('ui.v1_badge') }}</span></span>
         </a>
       </li>
       <li class="nav-item">
@@ -329,7 +329,7 @@
                 clip-rule="evenodd"></path>
             </svg>
           </span>
-          <span>Upgrade to Pro</span>
+          <span>{{ __('ui.upgrade_to_pro') }}</span>
         </a>
       </li>
     </ul>
