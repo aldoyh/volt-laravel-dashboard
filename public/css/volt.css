@@ -19000,3 +19000,42 @@ article .h1, article .h2, article .h3, article .h4, article .h5, article .h6 {
 
 .datepicker-dropdown {
   z-index: 9999; }
+
+/* =========================================================
+   RTL / Arabic overrides
+   ========================================================= */
+
+[dir="rtl"] {
+  font-family: 'Tajawal', sans-serif;
+  text-align: right;
+}
+
+/* Flip directional chevron/arrow SVGs in the sidenav */
+[dir="rtl"] .link-arrow svg {
+  transform: scaleX(-1);
+}
+
+/* Sidebar icon spacing */
+[dir="rtl"] .nav-link .sidebar-icon {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+/* Ensure Bootstrap RTL utility classes take effect correctly
+   (Bootstrap 5 RTL already handles ms-/me-/ps-/pe- automatically) */
+
+/* Form controls in RTL */
+[dir="rtl"] .input-group .input-group-text:first-child {
+  border-radius: 0 0.25rem 0.25rem 0;
+  border-right-width: 1px;
+  border-left-width: 0;
+}
+[dir="rtl"] .input-group .form-control {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+/* Dropdown arrows */
+[dir="rtl"] .dropdown-toggle::after {
+  margin-right: 0.255em;
+  margin-left: 0;
+}

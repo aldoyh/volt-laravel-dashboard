@@ -1,0 +1,123 @@
+    @if(env('IS_DEMO'))
+        <link rel="canonical" href="https://themesberg.com/product/laravel/volt-admin-dashboard-template">
+        <meta name="keywords" content="themesberg, updivision, html dashboard, laravel, livewire, laravel livewire, alpine.js, html css dashboard laravel, Volt Laravel Admin Dashboard, livewire volt dashboard, volt admin, livewire dashboard, livewire admin, web dashboard, bootstrap 5 dashboard laravel, bootstrap 5, css3 dashboard, bootstrap 5 admin laravel, volt dashboard bootstrap 5 laravel, frontend, responsive bootstrap 5 dashboard, volt dashboard, volt laravel bootstrap 5 dashboard">
+        <meta name="description" content="Volt Laravel Admin Dashboard features dozens of UI components and a Laravel backend with Livewire & Alpine.js">
+        <meta itemprop="name" content="Volt Laravel Admin Dashboard by Themesberg & UPDIVISION">
+        <meta itemprop="description" content="Volt Laravel Admin Dashboard features dozens of UI components and a Laravel backend with Livewire & Alpine.js">
+        <meta itemprop="image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-laravel-dashboard/volt-free-laravel-dashboard.jpg">
+        <meta name="twitter:card" content="product">
+        <meta name="twitter:site" content="@themesberg">
+        <meta name="twitter:title" content="Volt Laravel Admin Dashboard by Themesberg & UPDIVISION">
+        <meta name="twitter:description" content="Volt Laravel Admin Dashboard features dozens of UI components and a Laravel backend with Livewire & Alpine.js">
+        <meta name="twitter:creator" content="@themesberg">
+        <meta name="twitter:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-laravel-dashboard/volt-free-laravel-dashboard.jpg">
+        <meta property="fb:app_id" content="655968634437471">
+        <meta property="og:title" content="Volt Laravel Admin Dashboard by Themesberg & UPDIVISION">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://themesberg.com/product/laravel/volt-admin-dashboard-template/preview">
+        <meta property="og:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-laravel-dashboard/volt-free-laravel-dashboard.jpg">
+        <meta property="og:description" content="Volt Laravel Admin Dashboard features dozens of UI components and a Laravel backend with Livewire & Alpine.js">
+        <meta property="og:site_name" content="Themesberg">
+    @endif
+
+    <title>Volt Laravel Dashboard</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/assets/img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/img/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/assets/img/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+    @if(app()->getLocale() === 'ar')
+        <!-- Arabic Web Font (Tajawal) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    @endif
+
+    <!-- Apex Charts -->
+    <link type="text/css" href="/vendor/apexcharts/apexcharts.css" rel="stylesheet">
+
+    @if(app()->getLocale() === 'ar')
+        <!-- Bootstrap 5 RTL -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLX5UkriGs4ro6SoJx9YLxi5JGHD+0/vZ/S/b" crossorigin="anonymous">
+    @else
+        <!-- Bootstrap 5 LTR -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    @endif
+
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/css/datepicker.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/css/datepicker-bs4.min.css">
+
+    <!-- Fontawesome -->
+    <link type="text/css" href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Sweet Alert -->
+    <link type="text/css" href="/vendor/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+
+    <!-- Notyf -->
+    <link type="text/css" href="/vendor/notyf/notyf.min.css" rel="stylesheet">
+
+    <!-- Volt CSS -->
+    <link type="text/css" href="/css/volt.css" rel="stylesheet">
+
+    <!-- Core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <!-- Vendor JS -->
+    <script src="/assets/js/on-screen.umd.min.js"></script>
+    <script src="/assets/js/nouislider.min.js"></script>
+    <script src="/assets/js/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Apex Charts -->
+    <script src="/vendor/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Charts -->
+    <script src="/assets/js/chartist.min.js"></script>
+    <script src="/assets/js/chartist-plugin-tooltip.min.js"></script>
+
+    <!-- Datepicker -->
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker.min.js"></script>
+
+    <!-- Sweet Alerts 2 -->
+    <script src="/assets/js/sweetalert2.all.min.js"></script>
+
+    <!-- Moment JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+    <!-- Notyf -->
+    <script src="/vendor/notyf/notyf.min.js"></script>
+
+    <!-- Simplebar -->
+    <script src="/assets/js/simplebar.min.js"></script>
+
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Volt JS -->
+    <script src="/assets/js/volt.js"></script>
+
+    @if(env('IS_DEMO'))
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141734189-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-141734189-6');
+        </script>
+        <!-- Google Tag Manager -->
+        <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-THQTXJ7');</script>
+    @endif

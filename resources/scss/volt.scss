@@ -87,3 +87,36 @@
 @import "volt/forms";
 
 // write your custom styles here!
+
+// =========================================================
+// RTL / Arabic overrides
+// =========================================================
+
+[dir="rtl"] {
+  font-family: 'Tajawal', sans-serif;
+  text-align: right;
+}
+
+[dir="rtl"] .link-arrow svg {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .nav-link .sidebar-icon {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .input-group .input-group-text:first-child {
+  border-radius: 0 0.25rem 0.25rem 0;
+  border-right-width: 1px;
+  border-left-width: 0;
+}
+
+[dir="rtl"] .input-group .form-control {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+[dir="rtl"] .dropdown-toggle::after {
+  margin-right: 0.255em;
+  margin-left: 0;
+}

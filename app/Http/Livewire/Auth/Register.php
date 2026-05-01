@@ -2,11 +2,15 @@
 
 namespace App\Http\Livewire\Auth;
 
+use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
+#[Title('Sign Up – Volt Dashboard')]
+#[Layout('components.layouts.guest')]
 class Register extends Component
 {
 
@@ -23,7 +27,7 @@ class Register extends Component
 
     public function updatedEmail()
     {
-        $this->validate(['email'=>'required|email:rfc,dns|unique:users']);
+        $this->validate(['email'=>'required|email|unique:users']);
     }
     
     public function register()

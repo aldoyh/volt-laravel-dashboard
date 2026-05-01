@@ -5,8 +5,10 @@ namespace App\Http\Livewire;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+#[Title('Profile – Volt Dashboard')]
 class Profile extends Component
 {
     public User $user;
