@@ -4,8 +4,12 @@ namespace App\Http\Livewire;
 
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+#[Title('Reset Password – Volt Dashboard')]
+#[Layout('components.layouts.guest')]
 class ResetPassword extends Component
 {   
     public $email = '';

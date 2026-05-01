@@ -4,11 +4,15 @@ namespace App\Http\Livewire;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
+use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 use App\Models\User;
 use Illuminate\Notifications\Notifiable;
 use App\Notifications\ResetPassword;
 
+#[Title('Forgot Password – Volt Dashboard')]
+#[Layout('components.layouts.guest')]
 class ForgotPassword extends Component
 {
     use Notifiable;

@@ -3,8 +3,12 @@
 namespace App\Http\Livewire\Auth;
 
 use App\Models\User;
+use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+#[Title('Sign In – Volt Dashboard')]
+#[Layout('components.layouts.guest')]
 class Login extends Component
 {
 
@@ -13,7 +17,7 @@ class Login extends Component
     public $remember_me = false;
 
     protected $rules = [
-        'email' => 'required|email:rfc,dns',
+        'email' => 'required|email',
         'password' => 'required|min:6',
     ];
 
